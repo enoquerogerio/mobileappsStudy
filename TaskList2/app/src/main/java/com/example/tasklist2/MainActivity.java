@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 String selectedDescription = notesMap.get(selectedTitle);
 
                 Intent intent = new Intent(MainActivity.this, ReadNote.class);
-                intent.putExtra("title", selectedTitle);
+                intent.putExtra( "title", selectedTitle);
                 intent.putExtra("description", selectedDescription);
                 startActivity(intent);
             }
