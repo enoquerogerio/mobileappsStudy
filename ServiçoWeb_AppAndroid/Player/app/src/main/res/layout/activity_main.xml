@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo para o Nome do Jogador -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Jogador"
+        android:inputType="textPersonName" />
+
+    <!-- Campo para a Nacionalidade -->
+    <EditText
+        android:id="@+id/etNationality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nacionalidade"
+        android:inputType="textPersonName" />
+
+    <!-- Campo para Data de Nascimento -->
+    <EditText
+        android:id="@+id/etBirthDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data de Nascimento (YYYY-MM-DD)"
+        android:inputType="date" />
+
+    <!-- Campo para Títulos -->
+    <EditText
+        android:id="@+id/etTitles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de Títulos"
+        android:inputType="number" />
+
+    <!-- Botão para Enviar os Dados -->
+    <Button
+        android:id="@+id/btnSendPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Dados do Jogador" />
+
+    <Button
+        android:id="@+id/btnGetPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar Dados do Jogador" />
+
+    <!-- TextView para Exibir o Resultado -->
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resposta da API aparecerá aqui"
+        android:paddingTop="16dp" />
+
+</LinearLayout>
